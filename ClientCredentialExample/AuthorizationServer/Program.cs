@@ -7,8 +7,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddIdentityServer()
     .AddInMemoryIdentityResources(InMemoryConfig.GetIdentityResources())
-    .AddInMemoryApiScopes(InMemoryConfig.ApiScopes)
     .AddInMemoryApiResources(InMemoryConfig.Apis)
+    .AddInMemoryApiScopes(InMemoryConfig.ApiScopes)    
     .AddInMemoryClients(InMemoryConfig.GetClients())
     .AddDeveloperSigningCredential();
 

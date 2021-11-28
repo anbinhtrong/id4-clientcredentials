@@ -6,7 +6,7 @@ builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
     {
         options.Authority = "https://localhost:9000/";
-        options.Audience = "ApiOne";
+        options.Audience = "ApiResource1";
     });
 
 var app = builder.Build();
